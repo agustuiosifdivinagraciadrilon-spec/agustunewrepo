@@ -1,0 +1,118 @@
+---
+title: "Document"
+author: "Agustu Iosif Drilon"
+date: "2026-09-30"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+# Part A — Arithmetic Operations
+
+# # TODO: Store 17 in a variable called a, and 5 in a variable called b
+# Then print the results of: a + b, a - b, a * b, a / b
+a <- 17
+b <- 5
+
+a + b
+a - b
+a * b
+a / b
+```
+```{r}
+# TODO: Using the same a and b, compute and print a %% b and a %/% b
+# a %% b = remainder of a / b
+# a %/% b = whole-number (integer) division
+
+z <- a %% b
+print(z)
+
+z <- a %/%b
+print(z)
+
+```
+```{r}
+# TODO: Print 2 raised to the power of 10 using the ^ operator
+z <- a^b
+print(z)
+
+```
+```{r}
+# Question #1: Run 17 / 5, 17 %% 5, and 17 %/% 5 side by side. In your own words, explain how these three results relate to each other mathematically.
+# Answer: So, 17 / 5 gives the exact answer (3.4), %/% gives the whole number (3), and %% gives the remainder (2).
+
+# Question #2: Predict the output of 10 %% 3 and 10 %/% 3 before running the code. Were you correct? If not, explain what you misunderstood.
+# Answer: 
+# 10 %% 3 = 1
+# 10 %/% 3 → 3 
+# Yes, I was correct.
+
+```
+
+```{r}
+
+# Part B — Basic Data Types: typeof(), class(), and mode()
+ x <- 42
+ y <- 42L       
+z <- "42"
+w <- TRUE
+v <- 3 + 2i
+
+# TODO: Use typeof() to check the type of each of x, y, z, w, v
+
+typeof(x)
+typeof(y)
+typeof(z)
+typeof(w)
+typeof(v)
+
+```
+```{r}
+# TODO: Use class() to check the class of each of x, y, z, w, v
+
+class(x)
+class(y)
+class(z)
+class(w)
+class(v)
+
+```
+```{r}
+# TODO: Use mode() to check the class of each of x, y, z, w, v
+
+mode(x)
+mode(y)
+mode(z)
+mode(w)
+mode(v)
+
+```
+```{r}
+#Question #3): x <- 42 and y <- 42L look almost identical, but typeof(x) and typeof(y) give different answers. Explain the difference in your own words.
+
+#Answer: x <- 42 is stored as a double (numeric), while y <- 42L is stored as an integer. The L tells R to treat 42 specifically as an integer.
+
+# Question #4: Is typeof() ever different from class() and from mode() for the same object? Look at your results above and explain any case where this happens (or, if you did not see one, explain what you would expect for a matrix or factor).
+
+# Answer: Yes, they can be different. For example, x <- 42 is a double in typeof(), but class() and mode() show it as numeric. Basically, they describe the same value in slightly different ways.
+
+```
+
+```{r}
+# Part C — Type Conversion (20 min)
+
+num_string <- "123"
+# TODO: Convert num_string to a numeric value using as.numeric()
+# Then check its type with typeof(), class(), and mode()
+
+num_numeric <- as.numeric(num_string)
+
+typeof(num_numeric)
+class(num_numeric)
+mode(num_numeric)
+
+```
+
