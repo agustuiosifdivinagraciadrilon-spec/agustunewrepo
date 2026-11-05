@@ -14,7 +14,7 @@ Agustu Iosif Drilon
 Part A — Creating Vectors: c(), seq(), rep()
 ```{r}
 
-#scores <- c(88, 92, 79, 95, 84)
+scores <- c(88, 92, 79, 95, 84)
 subjects <- c("Math", "Science", "English", "History", "PE")
 
 print(scores)
