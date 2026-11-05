@@ -1,5 +1,5 @@
 ---
-title: "Exercise#3_Drilon.Rmd"
+title: "R Lab: Data Structures - Vectors and Lists"
 author: "Agustu Iosif Drilon"
 date: "2026-10-21"
 output: html_document
